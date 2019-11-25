@@ -74,12 +74,14 @@ social-network-links:
   email: "mb4511@columbia.edu"
   linkedin: "mayurbansal16"
   medium: "@mb4511"
+  github: "MB4511"
 
 
 # Select which share links to show in posts
 share-links-active:
   linkedin: true
   medium: true
+  github: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
