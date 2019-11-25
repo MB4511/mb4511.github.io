@@ -26,7 +26,7 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Article on NLP: "https://towardsdatascience.com/decoding-the-output-of-a-hybrid-recommendation-system-2007d85547bf?source=friends_link&sk=d9e76170ea3cb993de3321645050ca0e"
-    - GitHub Page: "@MB4511"
+    - GitHub Page: "https://github.com/MB4511"
   Author's home: "https://mb4511.github.io"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -73,7 +73,7 @@ social-network-links:
   rss: true
   email: "mb4511@columbia.edu"
   linkedin: "mayurbansal16"
-  medium: "https://medium.com/@mb4511"
+  medium: "@mb4511"
 
 
 # Select which share links to show in posts
