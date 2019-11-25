@@ -5,7 +5,7 @@ title: Marketing Analytics -Survey Data Analysis
 ---
 ## Marketing
 
-[Analyzing a survey data to generate interesting insights for a marketing team](https://github.com/MB4511/Marketing-Analytics-on-Survey-Data-.git). 
+Click here for the github page [Analyzing a survey data to generate interesting insights for a marketing team](https://github.com/MB4511/Marketing-Analytics-on-Survey-Data-.git). 
 
 
 Analyzing a survey data on mobile products
