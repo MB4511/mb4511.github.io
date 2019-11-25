@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Let me take you on my data journey
+subtitle: Let me take you on my journey through the lens of data 
 ---
 
 My name is Mayur Bansal. I have the following interests:
