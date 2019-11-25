@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Marketing Analytics -Survey Data Analysis
 ---
 ## Marketing
