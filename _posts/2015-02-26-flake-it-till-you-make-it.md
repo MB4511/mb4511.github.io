@@ -8,9 +8,7 @@ tags: [data science, predictive modeling]
 
 ## My Journey to predict Airbnb Prices in New York City
 
-Click here for the github page [Exploring, Cleaning, Feature Engineering, Supervised Learning on Airbnb New York Data]
-(https://github.com/MB4511/Kaggle-Project--AirBnb-)
-
+Click here for the github page (https://github.com/MB4511/Kaggle-Project--AirBnb-)
 
 
 ### Kaggle-Project--Airbnb-
