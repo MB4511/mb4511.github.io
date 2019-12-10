@@ -2,14 +2,14 @@
 layout: post
 title: Airbnb House Price Prediction 
 subtitle: Kaggle Competition 
-bigimg: /img/path.jpg
+bigimg: /users/mayurbansal/desktop/housepricelogo.jpg
 tags: [data science, predictive modeling]
 ---
 
 ## My Journey to predict Airbnb Prices in New York City
 
 Click here for the github page [Exploring, Cleaning, Feature Engineering, Supervised Learning on Airbnb New York Data]
-https://github.com/MB4511/Kaggle-Project--AirBnb-
+(https://github.com/MB4511/Kaggle-Project--AirBnb-). 
 
 Kaggle-Project--Airbnb-
 Predicting Airbnb rental prices in New York CIty. This school wide competition was held from Sept 2018 - Dec 2018 and I managed to finish within Top 7 % of the leaderboard by applying predictive analytics techniques on a fairly complex dataset.
