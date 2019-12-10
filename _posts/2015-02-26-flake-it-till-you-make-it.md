@@ -1,15 +1,66 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
+title: Airbnb House Price Prediction 
+subtitle: Kaggle Competition 
 bigimg: /img/path.jpg
-tags: [books, test]
+tags: [data science, predictive modeling]
 ---
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+## My Journey to predict Airbnb Prices in New York City
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+Click here for the github page [Exploring, Cleaning, Feature Engineering, Supervised Learning on Airbnb New York Data]
+https://github.com/MB4511/Kaggle-Project--AirBnb-
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
+Kaggle-Project--Airbnb-
+Predicting Airbnb rental prices in New York CIty. This school wide competition was held from Sept 2018 - Dec 2018 and I managed to finish within Top 7 % of the leaderboard by applying predictive analytics techniques on a fairly complex dataset.
 
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+Introduction
+The aim of the project was to predict the rental prices of over 25,000 Airbnb listings in NYC. The predictions had to be made using 95 variables which made feature selection extremely important. To check for the accuracy of predictions, RMSE(root mean squared error) metric was computed.
+
+Exploratory Data Analysis
+To get familiar with this fairly complicated dataset, I began inspecting various variables and visualizing the relationship between various variables. Some of the steps I took for EDA were:
+
+a) Removing unncessary variables from the dataset(used feature selection techniques like Lasso Regression, Forward selection).
+
+b) ggplots and data visualization tools like Tableau to get a sense of how variables interact to make a rental costlier or not.
+
+c) correlations between variables before performing machine learning techniques.
+
+Data Cleaning
+Now came the most challenging part of the project. To get the most out of the statistical modeling techniques, the dataset had to be cleaned which took weeks of hard work and logical thinking.
+
+Some steps taken were:
+
+a) Imputing Missing data: I used MICE imputation, kNN method and even median imputation for certain variables. However, I had to go back and forth to check for the best method to handle missing values.
+
+b) One hot encoding: Many variables were character variables which were one hot encoded for faster computation and storage purposes.
+
+c) Dealing with relevant variables: Some variables like Property Type and neighbourhood cleansed were extremely important but had too much information which had to be reduced to make certain algorithms such as Random Forest work. To reduce the levels of properties, I came up with a threshold value of listings for each property below which all the levels were removed. I only included the top 5 properties to have a more insightful prediction.
+
+Feature Engineering
+In order to make more accurate predictions, I decided to use information about amenities as separate variables to give more weight to my models. for exaqmple, business amenities such as laptop friendly, doorman services, iron and dryer etc were all factors which have a say in the pricing of a rental.
+
+Also, information about number of amenities listed was taken into account as more the amenities, higher the chance for a increase in price of rental
+
+Supervised Machine Learning
+Techniques applied:
+
+1) Linear Regression
+After finalizing the few variables which seemed the most relevant using feature selection, I tested few models by fitting them with linear regression. The method was decent enough to give some really insightful and interpretable analysis but the accuracy was not good enough to make an impact in the leaderboard.
+
+Lowest RMSE achieved: 66
+
+2) Random Forest
+Random forest showed a drastic improvement in accuracy but the computation speed was too high and hence inefficient for 95 variables with some variables having a lot of levels.
+
+Lowest RMSE achieved: 55
+
+3) Gradient Boosting
+Gradient Boosting performed slightly better than Random forest on the basis of accuracy but this particular algorithm required a lot of effort to hypertune the parameter. But once I figured the paramaters using cross validation and grid search, it perfomed well as it took lesser time to compute the model.
+
+Lowest RMSE achieved: 52
+
+4) XGBoost
+XGboost required a lot more effort to tune the parameters, even more effort than gbm demanded. However, the algorithm gave even more accurate predictions with less computation time.
+
+Lowest RMSE achieved: 50
