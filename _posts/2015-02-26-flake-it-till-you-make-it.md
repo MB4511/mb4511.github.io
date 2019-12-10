@@ -4,6 +4,7 @@ title: Airbnb House Price Prediction
 subtitle: Kaggle Competition 
 published: true
 tags: [data science, predictive modeling]
+link: true
 ---
 
 ## My Journey to predict Airbnb Prices in New York City
