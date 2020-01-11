@@ -1,0 +1,19 @@
+---
+layout: post
+published: true
+title: Decoding a Healthcare recommender system using NLP techniques
+---    
+
+## Healthcare
+
+Click here for the github page 
+
+This article will guide you through my intuition and approach behind interpreting a blackbox recommendation sysytem in the healthcare setup
+to understand if the medical context associated with the medical data is captured truely by the trained machine learning model.
+
+### Description
+
+With the rise of emerging analytical techniques, an effective recommendation system has become a game changer in the world of data science. Companies like Netflix and Amazon have surpassed their competitors by building some reliable recommendation systems. 
+But these black box algorithms, are they really interpretable? In a complex field like healthcare, can we rely on such an algorithm to solve some real world healthcare problems? And most importantly, can these systems capture the medical context associated with the available sensitive medical data on customers.
+
+
